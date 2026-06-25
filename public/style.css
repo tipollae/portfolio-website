@@ -498,14 +498,14 @@ html, body {
     font-family: "Roboto", sans-serif;
     font-weight: 500;
 
-    font-size: clamp(0.6rem, 1.5vw, 38px);
+    font-size: 20px;
 
     margin: 0.2em 0 0;
     line-height: 1.1;
 
     background-color: var(--orange);
     border-radius: 10px;
-    padding: 30px;
+    padding: 18px;
     padding-left: 34px;
     padding-right: 34px;
 
@@ -653,10 +653,10 @@ html, body {
 
     .button{
 
-        font-size: clamp(0.8rem, 3vw, 50px);
-        padding: 20px;
-        padding-left: 34px;
-        padding-right: 34px;
+        font-size: 16px;
+        padding: 17px;
+        padding-left: 28px;
+        padding-right: 28px;
 
 
     }
