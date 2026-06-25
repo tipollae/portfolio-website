@@ -11,7 +11,7 @@
     
     <link rel="stylesheet" href="style.css">
 </head>
-<body onload = "rollingText('Tim Cubid', 'hero-title', 10, 17); 
+<body onload = "rollingText('Tim Cubid', 'hero-title', 7, 20); 
 typingText([
     'tipollae',
     'University Student',
@@ -30,7 +30,7 @@ typingText([
 
             <div id="hero-buttons">
                 <div class="button" onclick = "scrollToSection('projects');">My Projects</div>
-                <div class="button hollow" style="margin-left: 18px;">Contact Me</div>
+                <div class="button hollow" style="margin-left: 18px;" onclick = "openContacts()">Contact Me</div>
             </div>
         </div>
     </div>
@@ -44,17 +44,17 @@ typingText([
             <div class="info-container">
 
                 <div class="info-image">
-                    <img src="images/profile.jpg" alt="Tim Cubid">
+                    <img src="images/profile.jpg" style = "object-position: center 20%;" alt="Tim Cubid">
                 </div>
 
                 <div class="info-text">
 
                     <h1 class="info-heading">
-                        A developer who <span>cares about the details.</span>
+                        A developer that <span>loves to build.</span>
                     </h1>
 
                     <p class="info-paragraph">
-                        I'm a Computer Science student from New Zealand who enjoys
+                        I'm a Computer Science student at the University of Auckland who enjoys
                         building real-time multiplayer applications, experimenting with
                         ambitious ideas, and learning by creating projects from scratch.
                     </p>
@@ -73,11 +73,11 @@ typingText([
                 <div class="info-text cat">
 
                     <h1 class="info-heading">
-                        I also really like my <span>cat</span>
+                        I also really like my <span>cat.</span>
                     </h1>
 
                     <p class="info-paragraph">
-                        His name is Milo :)
+                        His name is Milo.
                     </p>
 
                 </div>
@@ -96,9 +96,9 @@ typingText([
                 Some things I've <span>built.</span>
             </h1>
 
-            <div class="projects-container" onclick = "window.open('https://co-code.net/')">
+            <div class="projects-container">
 
-                <div class="project-card">
+                <div class="project-card" onclick = "window.open('https://co-code.net/')">
                     <img src="images/co-code net gif.gif" loading="lazy" alt="co-code.net">
 
                     <div class="project-info">
@@ -110,7 +110,9 @@ typingText([
                         </p>
 
                         <div class="project-tags">
+                            <span style = "background-color: white; color: black"><b>Live Demo</b></span>
                             <span>Node.js</span>
+                            <span>Express</span>
                             <span>Socket.IO</span>
                             <span>Pyodide</span>
                         </div>
@@ -121,7 +123,7 @@ typingText([
                     <img src="images/yuzzwatch gif.gif" loading="lazy" alt="Yuzzwatch">
 
                     <div class="project-info">
-                        <h2>Yuzzwatch</h2>
+                        <h2>yuzzwatch</h2>
 
                         <p>
                             A synchronized watch party platform with live chat and
@@ -129,9 +131,12 @@ typingText([
                         </p>
 
                         <div class="project-tags">
+                            <span style = "background-color: white; color: black"><b>Live Demo</b></span>
                             <span>MongoDB</span>
                             <span>Express</span>
                             <span>Socket.IO</span>
+                            <span>Node.js</span>
+                            <span>Youtube API</span>
                         </div>
                     </div>
                 </div>
@@ -151,6 +156,8 @@ typingText([
                             <span>MongoDB</span>
                             <span>Express</span>
                             <span>Socket.IO</span>
+                            <span>Youtube API</span>
+                            <span>Node.js</span>
                         </div>
                     </div>
                 </div>
@@ -162,13 +169,15 @@ typingText([
                         <h2>Zoinks</h2>
 
                         <p>
-                            A real-time 2D multiplayer shooter with server-authoritative movement, dynamic maps, portals, and live leaderboards built using Phaser and Socket.IO.
+                            A multiplayer fast-paced movement shooter game built using Phaser and Socket.IO.
                         </p>
 
                         <div class="project-tags">
                             <span>Phaser 3</span>
+                            <span>Node.js</span>
                             <span>Express</span>
                             <span>Socket.IO</span>
+                            
                         </div>
                     </div>
                 </div>
@@ -178,6 +187,37 @@ typingText([
         </div>
 
         <br><br><br><br><br><br><br><br><br><br>
+
+    </div>
+
+    <div id="contact" class = "contact-close">
+
+        <div id="close-contact" onclick = "closeContacts()">×</div>
+
+        <h1 class="contact-title">Contact Me</h1>
+
+        <p class="contact-subtitle">
+            Feel free to reach out.
+        </p>
+
+        <div class="contact-list">
+
+            <a class="contact-item" href="mailto:tim.rcubid@gmail.com">
+                <span>Email</span>
+                <span>tim.rcubid@gmail.com</span>
+            </a>
+
+            <a class="contact-item" href="https://github.com/tipollae" target="_blank">
+                <span>GitHub</span>
+                <span>github.com ↗</span>
+            </a>
+
+            <a class="contact-item" href="https://www.linkedin.com/in/tim-cubid-9774513a2/" target="_blank">
+                <span>LinkedIn</span>
+                <span>https://www.linkedin.com ↗</span>
+            </a>
+
+        </div>
 
     </div>
 

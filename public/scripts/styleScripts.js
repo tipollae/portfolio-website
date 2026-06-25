@@ -20,8 +20,6 @@ async function rollingText(givenText, referenceID, solveInterval, changeTimeout,
         timeStamp = 0;
     }
 
-    console.log('going')
-
     element.innerHTML = formed;
     if (currentIndex >= givenText.length){
         element.textContent = givenText;
@@ -61,18 +59,3 @@ function wait(waitTime){
     })
 
 }
-
-document.addEventListener("DOMContentLoaded", () => {
-    rollingText("Tim Cubid", "hero-title", 10, 17);
-
-    typingText([
-        "tipollae",
-        "University Student",
-        "Full-stack Developer",
-        "Real-time Web Apps",
-        "Game Developer",
-        "Web Developer",
-        "Problem Solver",
-        "Passionate Builder"
-    ], 2500, 30, "hero-heading");
-});

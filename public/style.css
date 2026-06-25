@@ -76,7 +76,6 @@ html, body {
     animation: fade-in 3s forwards;
 
 }
-
 #name-heading{
     height: 40px;
 }
@@ -293,6 +292,135 @@ html, body {
 
 }
 
+/*contact*/
+#contact{
+
+    position: fixed;
+    left: 50%;
+    top: 50%;
+
+    transform: translate(-50%, -50%);
+
+    width: 550px;
+    height: 80%;
+
+    background-color: var(--main-black);
+    border: 3px solid white;
+
+    border-radius: 10px;
+    z-index: 10;
+
+}
+
+#close-contact{
+
+    position: absolute;
+
+    top: 10px;
+    right: 10px;
+
+    width: 40px;
+    height: 40px;
+
+    border-radius: 50%;
+    border: 3px solid red;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-family: "Roboto Mono", monospace;
+    font-size: 20px;
+    color: red;
+
+    cursor: pointer;
+
+    transition: background-color 0.2s ease-in-out,
+    color 0.2s ease-in-out;
+
+}
+
+#close-contact:hover{
+
+    background-color: red;
+    color: white
+
+}
+
+.contact-title{
+
+    margin-top: 50px;
+
+    color: white;
+    font-family: "Roboto", sans-serif;
+    font-size: 42px;
+    font-weight: 500;
+
+    text-align: center;
+
+}
+
+.contact-subtitle{
+
+    color: rgb(180,180,180);
+
+    font-family: "Roboto", sans-serif;
+    text-align: center;
+
+    margin-bottom: 60px;
+
+}
+
+.contact-list{
+
+    width: 85%;
+
+    margin: auto;
+
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+
+}
+
+.contact-item{
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 18px 24px;
+
+    border: 1px solid rgba(255,255,255,.08);
+    border-radius: 12px;
+
+    background: rgba(255,255,255,.03);
+
+    color: white;
+    text-decoration: none;
+
+    font-family: "Roboto", sans-serif;
+
+    transition: .18s;
+
+}
+
+.contact-item:hover{
+
+    border-color: var(--orange);
+
+    transform: translateY(-2px);
+
+}
+
+.contact-item span:last-child{
+
+    color: rgb(180,180,180);
+
+    font-family: "Roboto Mono", monospace;
+
+}
+
 /*sticky background*/
 .sticky-section {
     position: relative;
@@ -370,14 +498,16 @@ html, body {
     font-family: "Roboto", sans-serif;
     font-weight: 500;
 
-    font-size: clamp(0.8rem, 2vw, 50px);
+    font-size: clamp(0.6rem, 1.5vw, 38px);
 
     margin: 0.2em 0 0;
     line-height: 1.1;
 
     background-color: var(--orange);
-    border-radius: 2px;
-    padding: 10px;
+    border-radius: 10px;
+    padding: 30px;
+    padding-left: 34px;
+    padding-right: 34px;
 
     cursor: pointer;
 
@@ -419,6 +549,16 @@ html, body {
     to {
         opacity: 1;
     }
+}
+
+.contact-open{
+    animation: fade-in 0.3s forwards;
+    display: block;
+}
+
+.contact-close{
+    opacity: 0;
+    display: none;
 }
 
 
@@ -466,5 +606,59 @@ html, body {
         text-align: center;
     }
 
+    #contact {
+        width: 90%;
+        height: auto;
+        min-height: 70vh;
+        max-height: 85vh;
+
+        overflow-y: auto;
+        border-radius: 16px;
+    }
+
+    #close-contact {
+        top: 12px;
+        right: 12px;
+    }
+
+    .contact-title {
+        font-size: 32px;
+        margin-top: 60px;
+    }
+
+    .contact-subtitle {
+        width: 80%;
+        margin: 0 auto 40px;
+        font-size: 15px;
+    }
+
+    .contact-list {
+        width: 85%;
+        gap: 14px;
+        padding-bottom: 30px;
+    }
+
+    .contact-item {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 8px;
+
+        padding: 16px 18px;
+    }
+
+    .contact-item span:last-child {
+        font-size: 13px;
+        word-break: break-word;
+    }
+
+    .button{
+
+        font-size: clamp(0.8rem, 3vw, 50px);
+        padding: 20px;
+        padding-left: 34px;
+        padding-right: 34px;
+
+
+    }
 
 }
