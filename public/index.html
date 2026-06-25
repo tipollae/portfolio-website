@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body onload = "rollingText('Tim Cubid', 'hero-title', 10, 17); 
+typingText([
+    'tipollae',
+    'University Student',
+    'Full-stack Developer',
+    'Real-time Web Apps',
+    'Game Developer',
+    'Web Developer',
+    'Problem Solver',
+    'Passionate Builder'
+], 2500, 30, 'hero-heading')">
+    
+    <div class="hero_container">
+        <div class="hero-content">
+            <p class="title" id="hero-title">Tim Cubid</p>
+            <p class="heading-thin" id="hero-heading">Full stack developer</p>
+
+            <div id="hero-buttons">
+                <div class="button" onclick = "scrollToSection('projects');">My Projects</div>
+                <div class="button hollow" style="margin-left: 18px;">Contact Me</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="sticky-section">
+        <div class="sticky-background">
+        </div>
+
+        <div id = "info">
+
+            <div class="info-container">
+
+                <div class="info-image">
+                    <img src="images/profile.jpg" alt="Tim Cubid">
+                </div>
+
+                <div class="info-text">
+
+                    <h1 class="info-heading">
+                        A developer who <span>cares about the details.</span>
+                    </h1>
+
+                    <p class="info-paragraph">
+                        I'm a Computer Science student from New Zealand who enjoys
+                        building real-time multiplayer applications, experimenting with
+                        ambitious ideas, and learning by creating projects from scratch.
+                    </p>
+
+                    <p class="info-paragraph">
+                        I enjoy solving difficult technical problems while also paying
+                        close attention to user experience and design.
+                    </p>
+
+                </div>
+
+            </div>
+
+            <div class="info-container" style="margin-top: 100px;">
+
+                <div class="info-text cat">
+
+                    <h1 class="info-heading">
+                        I also really like my <span>cat</span>
+                    </h1>
+
+                    <p class="info-paragraph">
+                        His name is Milo :)
+                    </p>
+
+                </div>
+
+                <div class="info-image">
+                    <img src="images/cat.jpg" alt="Tim Cubid">
+                </div>
+
+            </div>
+
+        </div>
+
+        <div id="projects">
+
+            <h1 class="projects-heading">
+                Some things I've <span>built.</span>
+            </h1>
+
+            <div class="projects-container" onclick = "window.open('https://co-code.net/')">
+
+                <div class="project-card">
+                    <img src="images/co-code net gif.gif" loading="lazy" alt="co-code.net">
+
+                    <div class="project-info">
+                        <h2>co-code.net</h2>
+
+                        <p>
+                            A browser-based multiplayer Python coding platform with
+                            real-time collaboration.
+                        </p>
+
+                        <div class="project-tags">
+                            <span>Node.js</span>
+                            <span>Socket.IO</span>
+                            <span>Pyodide</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card" onclick = "window.open('https://www.yuzzwatch.com')">
+                    <img src="images/yuzzwatch gif.gif" loading="lazy" alt="Yuzzwatch">
+
+                    <div class="project-info">
+                        <h2>Yuzzwatch</h2>
+
+                        <p>
+                            A synchronized watch party platform with live chat and
+                            shared video playback using the Youtube API.
+                        </p>
+
+                        <div class="project-tags">
+                            <span>MongoDB</span>
+                            <span>Express</span>
+                            <span>Socket.IO</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card" onclick = "window.open('https://github.com/tipollae/baklafy')">
+                    <img src="images/baklafy logo.png" loading="lazy" alt="Baklafy">
+
+                    <div class="project-info">
+                        <h2>Baklafy</h2>
+
+                        <p>
+                            A music streaming project focused on backend systems and
+                            playlist management.
+                        </p>
+
+                        <div class="project-tags">
+                            <span>MongoDB</span>
+                            <span>Express</span>
+                            <span>Socket.IO</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card" onclick = "window.open('https://github.com/tipollae/zoinks-multiplayer-game')">
+                    <img src="images/zoinks gif.gif" loading="lazy" alt="Zoinks">
+
+                    <div class="project-info">
+                        <h2>Zoinks</h2>
+
+                        <p>
+                            A real-time 2D multiplayer shooter with server-authoritative movement, dynamic maps, portals, and live leaderboards built using Phaser and Socket.IO.
+                        </p>
+
+                        <div class="project-tags">
+                            <span>Phaser 3</span>
+                            <span>Express</span>
+                            <span>Socket.IO</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+        <br><br><br><br><br><br><br><br><br><br>
+
+    </div>
+
+    <script type = "text/javascript" src = "scripts/styleScripts.js"></script>
+    <script type = "text/javascript" src = "scripts/interactions.js"></script>
+
+</body>
+</html>
