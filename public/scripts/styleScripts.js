@@ -2,7 +2,7 @@
 async function rollingText(givenText, referenceID, solveInterval, changeTimeout, timeStamp = 0, currentIndex = 0){
 
     const element = document.getElementById(referenceID);
-    const chars = "AaBbCcDdǟɖEeFfGgHhIiJjKkLɖǟֆɖlMmNnOoคŞ໓คŞ໓໓RrSsTtUuVvWwXxᏗᏕᎴᏗᏕᎴᎴYyZz";
+    const chars = "AaBbCcDdEeFfGgHhIiJjKkLlMmNnOoPpQqRrSsTtUuVvWwXxYyZz";
     const INTERVAL = 90;
 
     let formed = givenText.slice(0, currentIndex);
@@ -57,5 +57,23 @@ function wait(waitTime){
     return new Promise(resolve => {
         setTimeout(resolve, waitTime);
     })
+
+}
+
+async function start(){
+
+    typingText([
+        'tipollae',
+        'University Student',
+        'Full-stack Developer',
+        'Real-time Web Apps',
+        'Game Developer',
+        'Web Developer',
+        'Problem Solver',
+        'Passionate Builder'
+    ], 2500, 30, 'hero-heading');
+
+    await rollingText('My Projects', 'projects-button', 4, 16);
+    await rollingText('Contact Me', 'contacts-button', 4, 16);
 
 }

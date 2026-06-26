@@ -12,17 +12,7 @@
     
     <link rel="stylesheet" href="style.css">
 </head>
-<body onload = "rollingText('Tim Cubid', 'hero-title', 7, 20); 
-typingText([
-    'tipollae',
-    'University Student',
-    'Full-stack Developer',
-    'Real-time Web Apps',
-    'Game Developer',
-    'Web Developer',
-    'Problem Solver',
-    'Passionate Builder'
-], 2500, 30, 'hero-heading')">
+<body onload = "start()">
     
     <div class="hero_container">
         <div class="hero-content">
@@ -30,8 +20,8 @@ typingText([
             <p class="heading-thin" id="hero-heading">Full stack developer</p>
 
             <div id="hero-buttons">
-                <div class="button" onclick = "scrollToSection('projects');">My Projects</div>
-                <div class="button hollow" style="margin-left: 18px;" onclick = "openContacts()">Contact Me</div>
+                <div class="button" id = "projects-button" onclick = "scrollToSection('projects');">My Projects</div>
+                <div class="button hollow" id = "contacts-button" style="margin-left: 18px;" onclick = "openContacts()">Contact Me</div>
             </div>
         </div>
     </div>
